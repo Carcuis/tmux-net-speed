@@ -39,11 +39,11 @@ get_velocity()
     local vel_mb=$(( vel / MILLION ))
 
     if [[ $vel_mb != 0 ]] ; then
-        echo -n "$vel_mb MB/s"
+        echo -n "${vel_mb}M"
     elif [[ $vel_kb != 0 ]] ; then
-        echo -n "$vel_kb KB/s";
+        echo -n "${vel_kb}K";
     else
-        echo -n "$vel B/s";
+        echo -n "${vel}B";
     fi
 }
 
